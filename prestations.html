@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Prestations – Un temps pour Soi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER (Prestations actif) -->
+  <header class="site-header">
+    <div class="container">
+      <div class="navbar">
+        <a href="index.html" class="logo">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2" />
+            <path
+              d="M20 8C20 8 12 12 12 20C12 28 20 32 20 32C20 32 28 28 28 20C28 12 20 8 20 8Z"
+              fill="currentColor" opacity="0.3" />
+            <circle cx="20" cy="20" r="4" fill="currentColor" />
+          </svg>
+          <div class="logo-text">Un temps pour Soi</div>
+        </a>
+
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link">Accueil</a>
+          <a href="prestations.html" class="nav-link active">Prestations</a>
+          <a href="offre-du-mois.html" class="nav-link">Offre du mois</a>
+          <a href="galerie.html" class="nav-link">Galerie</a>
+          <a href="marques.html" class="nav-link">Nos marques</a>
+        </nav>
+
+        <a href="#" class="button" style="display:none;">Prendre RDV</a>
+
+        <button class="nav-toggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <div class="mobile-menu">
+        <div class="mobile-menu-inner">
+          <a href="index.html">Accueil</a>
+          <a href="prestations.html" class="active">Prestations</a>
+          <a href="offre-du-mois.html">Offre du mois</a>
+          <a href="galerie.html">Galerie</a>
+          <a href="marques.html">Nos marques</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- En-tête de page -->
+    <section class="page-header">
+      <div class="container">
+        <div class="section-chip" style="background:rgba(255,255,255,0.14);">
+          <span style="color:#fff;">Nos prestations</span>
+        </div>
+        <h1 class="page-header-title">Prenez soin de vous</h1>
+        <p class="page-header-subtitle">
+          Soins du visage, rituels du corps, beauté des mains, épilations et regard :
+          une carte complète pour répondre à toutes vos envies.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contenu -->
+    <section class="section section-light">
+      <div class="container">
+        <!-- Onglets catégories -->
+        <div class="tabs">
+          <button class="tab active" data-category="all" onclick="filterPrestations('all')">
+            Toutes
+          </button>
+          <button class="tab" data-category="visage" onclick="filterPrestations('visage')">
+            Visage
+          </button>
+          <button class="tab" data-category="corps" onclick="filterPrestations('corps')">
+            Corps / Rituels
+          </button>
+          <button class="tab" data-category="mains-pieds" onclick="filterPrestations('mains-pieds')">
+            Mains & Pieds
+          </button>
+          <button class="tab" data-category="epilations" onclick="filterPrestations('epilations')">
+            Épilations
+          </button>
+          <button class="tab" data-category="regard" onclick="filterPrestations('regard')">
+            Beauté du regard
+          </button>
+        </div>
+
+        <!-- Soins VISAGE -->
+        <div class="prestation-card" data-prestation-card data-category="visage">
+          <div class="prestation-grid">
+            <div class="prestation-image">
+              <img src="https://images.unsplash.com/photo-1664549760921-21a08832923b?auto=format&fit=crop&w=1200&q=80"
+                   alt="Soin Hydratation Intense">
+            </div>
+            <div class="prestation-body">
+              <div>
+                <h2 class="prestation-title">Soin Hydratation Intense</h2>
+                <p class="prestation-desc">
+                  Un soin complet pour repulper, apaiser et redonner confort aux peaux déshydratées.
+                </p>
+              </div>
+              <div class="prestation-meta">
+                <div class="prestation-meta-left">
+                  <span>Durée : 60 min</span>
+                </div>
+                <div class="prestation-price">75 €</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="prestation-card" data-prestation-card data-category="visage">
+          <div class="prestation-grid">
+            <div class="prestation-image">
+              <img src="https://images.unsplash.com/photo-1664549760921-21a08832923b?auto=format&fit=crop&w=1200&q=80"
+                   alt="Soin Anti-Âge Premium">
+            </div>
+            <div class="prestation-body">
+              <div>
+                <h2 class="prestation-title">Soin Anti-Âge Premium</h2>
+                <p class="prestation-desc">
+                  Lifting manuel, massage spécifique et actifs ciblés pour lisser les traits
+                  et redonner éclat au visage.
+                </p>
+              </div>
+              <div class="prestation-meta">
+                <div class="prestation-meta-left">
+                  <span>Durée : 90 min</span>
+                </div>
+                <div class="prestation-price">120 €</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="prestation-card" data-prestation-card data-category="visage">
+          <div class="prestation-grid">
+            <div class="prestation-image">
+              <img src="https://images.unsplash.com/photo-1664549760921-21a08832923b?auto=format&fit=crop&w=1200&q=80"
+                   alt="Nettoyage de peau">
+            </div>
+            <div class="prestation-body">
+              <div>
+                <h2 class="prestation-title">Nettoyage de Peau</h2>
+                <p class="prestation-desc">
+                  Nettoyage en profondeur, extraction des impuretés et soin adapté pour une peau nette
+                  et lumineuse.
+                </p>
+              </div>
+              <div class="prestation-meta">
+                <div class="prestation-meta-left">
+                  <span>Durée : 45 min</span>
+                </div>
+                <div class="prestation-price">55 €</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soins CORPS / RITUELS -->
+        <div class="prestation-card" data-prestation-card data-category="corps">
+          <div class="prestation-grid">
+            <div class="prestation-image">
+              <img src="https://images.unsplash.com/photo-1759214630580-7b2e97e2c29b?auto=format&fit=crop&w=1200&q=80"
+                   alt="Gommage Corps Complet">
+            </div>
+            <div class="prestation-body">
+              <div>
+                <h2 class="prestation-title">Gommage Corps Complet</h2>
+                <p class="prestation-desc">
+                  Exfoliation douce suivie d'une hydratation pour une peau lisse, douce et éclatante.
+                </p>
+              </div>
+              <div class="prestation-meta">
+                <div class="prestation-meta-left">
+                  <span>Durée : 45 min</span>
+                </div>
+                <div class="prestation-price">60 €</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="prestation-card" data-prestation-card data-category="corps">
+          <div class="prestation-grid">
+            <div class="prestation-image">
+              <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f8?auto=format&fit=crop&w=1200&q=80"
+                   alt="Massage Relaxant">
+            </div>
+            <div class="prestation-body">
+              <div>
+                <h2 class="prestation-title">Massage Relaxant</h2>
+                <p class="prestation-desc">
+                  Un massage enveloppant pour relâcher les tensions et retrouver une profonde détente.
+                </p>
+              </div>
+              <div class="prestation-meta">
+                <div class="prestation-meta-left">
+                  <span>Durée : 60 min</span>
+                </div>
+                <div class="prestation-price">70 €</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mains & pieds -->
+        <div class="prestation-card" data-prestation-card data-category="mains-pieds">
+          <div class="prestation-grid">
+            <div class="prestation-image">
+              <img src="https://images.unsplash.com/photo-1659391542239-9648f307c0b1?auto=format&fit=crop&w=1200&q=80"
+                   alt="Beauté des mains">
+            </div>
+            <div class="prestation-body">
+              <div>
+                <h2 class="prestation-title">Beauté des mains</h2>
+                <p class="prestation-desc">
+                  Mise en beauté complète : limage, cuticules, hydratation et pose de vernis.
+                </p>
+              </div>
+              <div class="prestation-meta">
+                <div class="prestation-meta-left">
+                  <span>Durée : 45 min</span>
+                </div>
+                <div class="prestation-price">40 €</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="prestation-card" data-prestation-card data-category="mains-pieds">
+          <div class="prestation-grid">
+            <div class="prestation-image">
+              <img src="https://images.unsplash.com/photo-1601333144130-9dcba0f09f52?auto=format&fit=crop&w=1200&q=80"
+                   alt="Beauté des pieds">
+            </div>
+            <div class="prestation-body">
+              <div>
+                <h2 class="prestation-title">Beauté des pieds</h2>
+                <p class="prestation-desc">
+                  Soin complet pour des pieds légers et parfaitement soignés.
+                </p>
+              </div>
+              <div class="prestation-meta">
+                <div class="prestation-meta-left">
+                  <span>Durée : 45 min</span>
+                </div>
+                <div class="prestation-price">50 €</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Épilations -->
+        <div class="prestation-card" data-prestation-card data-category="epilations">
+          <div class="prestation-grid">
+            <div class="prestation-image">
+              <img src="https://images.unsplash.com/photo-1601049313729-4726f814104b?auto=format&fit=crop&w=1200&q=80"
+                   alt="Épilation demi-jambes">
+            </div>
+            <div class="prestation-body">
+              <div>
+                <h2 class="prestation-title">Épilation demi-jambes</h2>
+                <p class="prestation-desc">
+                  Épilation précise et respectueuse de la peau pour des jambes nettes et douces.
+                </p>
+              </div>
+              <div class="prestation-meta">
+                <div class="prestation-meta-left">
+                  <span>Durée : 25 min</span>
+                </div>
+                <div class="prestation-price">25 €</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="prestation-card" data-prestation-card data-category="epilations">
+          <div class="prestation-grid">
+            <div class="prestation-image">
+              <img src="https://images.unsplash.com/photo-1601049313729-4726f814104b?auto=format&fit=crop&w=1200&q=80"
+                   alt="Épilation maillot">
+            </div>
+            <div class="prestation-body">
+              <div>
+                <h2 class="prestation-title">Épilation maillot</h2>
+                <p class="prestation-desc">
+                  Maillot classique ou échancré, selon vos préférences, avec une cire adaptée.
+                </p>
+              </div>
+              <div class="prestation-meta">
+                <div class="prestation-meta-left">
+                  <span>Durée : 20 min</span>
+                </div>
+                <div class="prestation-price">20 €</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Regard -->
+        <div class="prestation-card" data-prestation-card data-category="regard">
+          <div class="prestation-grid">
+            <div class="prestation-image">
+              <img src="https://images.unsplash.com/photo-1512207736890-6ffed8a84e8c?auto=format&fit=crop&w=1200&q=80"
+                   alt="Teinture cils">
+            </div>
+            <div class="prestation-body">
+              <div>
+                <h2 class="prestation-title">Teinture de cils</h2>
+                <p class="prestation-desc">
+                  Intensifie naturellement votre regard pour un effet mascara longue durée.
+                </p>
+              </div>
+              <div class="prestation-meta">
+                <div class="prestation-meta-left">
+                  <span>Durée : 20 min</span>
+                </div>
+                <div class="prestation-price">25 €</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="prestation-card" data-prestation-card data-category="regard">
+          <div class="prestation-grid">
+            <div class="prestation-image">
+              <img src="https://images.unsplash.com/photo-1609123174788-3c9e1dff9c73?auto=format&fit=crop&w=1200&q=80"
+                   alt="Rehaussement de cils">
+            </div>
+            <div class="prestation-body">
+              <div>
+                <h2 class="prestation-title">Rehaussement de cils</h2>
+                <p class="prestation-desc">
+                  Courbure naturelle et ouverture du regard sans extension.
+                </p>
+              </div>
+              <div class="prestation-meta">
+                <div class="prestation-meta-left">
+                  <span>Durée : 60 min</span>
+                </div>
+                <div class="prestation-price">60 €</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="logo">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2" />
+              <path
+                d="M20 8C20 8 12 12 12 20C12 28 20 32 20 32C20 32 28 28 28 20C28 12 20 8 20 8Z"
+                fill="currentColor" opacity="0.3" />
+              <circle cx="20" cy="20" r="4" fill="currentColor" />
+            </svg>
+            <div class="logo-text">Un temps pour Soi</div>
+          </div>
+          <p class="footer-text">
+            Votre institut de beauté dédié au bien-être et à la détente.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Coordonnées</h3>
+          <p class="footer-text">
+            123 Rue de la Beauté<br>
+            75001 Paris, France
+          </p>
+          <p class="footer-text">01 23 45 67 89<br>contact@untempspoursoi.fr</p>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Navigation</h3>
+          <a href="prestations.html" class="footer-link">Nos prestations</a>
+          <a href="offre-du-mois.html" class="footer-link">Offre du mois</a>
+          <a href="galerie.html" class="footer-link">Galerie</a>
+          <a href="marques.html" class="footer-link">Nos marques</a>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Horaires</h3>
+          <p class="footer-text">
+            Lundi - Vendredi : 9h - 19h<br>
+            Samedi : 9h - 17h<br>
+            Dimanche : fermé
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2025 Un temps pour Soi. Tous droits réservés.
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

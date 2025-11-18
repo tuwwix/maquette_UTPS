@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Un temps pour Soi – Institut de beauté</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER avec Accueil actif -->
+  <!-- remplace {{...}} -->
+  <header class="site-header">
+    <div class="container">
+      <div class="navbar">
+        <a href="index.html" class="logo">
+            <img src="logo.jpg" alt="Un temps pour Soi" />
+        </a>
+
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link active">Accueil</a>
+          <a href="prestations.html" class="nav-link">Prestations</a>
+          <a href="offre-du-mois.html" class="nav-link">Offre du mois</a>
+          <a href="galerie.html" class="nav-link">Galerie</a>
+          <a href="marques.html" class="nav-link">Nos marques</a>
+        </nav>
+
+        <a href="#" class="button" style="display:none;">Prendre RDV</a>
+
+        <button class="nav-toggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <div class="mobile-menu">
+        <div class="mobile-menu-inner">
+          <a href="index.html" class="active">Accueil</a>
+          <a href="prestations.html">Prestations</a>
+          <a href="offre-du-mois.html">Offre du mois</a>
+          <a href="galerie.html">Galerie</a>
+          <a href="marques.html">Nos marques</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-background">
+        <img src="https://images.unsplash.com/photo-1731336479432-3eb5fdb3ab1c?auto=format&fit=crop&w=1400&q=80"
+             alt="Institut spa" />
+      </div>
+      <div class="hero-content">
+        <div class="hero-logo-round">
+          <svg width="128" height="128" viewBox="0 0 128 128" fill="none"
+               xmlns="http://www.w3.org/2000/svg">
+            <circle cx="64" cy="64" r="60" stroke="white" stroke-width="3" opacity="0.9" />
+            <path
+              d="M64 20C64 20 36 32 36 64C36 96 64 108 64 108C64 108 92 96 92 64C92 32 64 20 64 20Z"
+              fill="white" opacity="0.3" />
+            <circle cx="64" cy="64" r="12" fill="white" />
+          </svg>
+        </div>
+        <h1 class="hero-title">Un temps pour Soi</h1>
+        <p class="hero-subtitle">Votre espace de bien-être et de beauté</p>
+        <div class="hero-actions">
+          <a href="#" class="button">Prendre rendez-vous</a>
+          <a href="#" class="button-outline">Offrir un bon cadeau</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section bienvenue -->
+    <section class="section section-light">
+      <div class="container">
+        <div class="grid-2">
+          <div>
+            <div style="border-radius: 24px; overflow: hidden; box-shadow: 0 12px 30px rgba(15,23,42,0.12);">
+              <img src="https://images.unsplash.com/photo-1762745103248-093916cce084?auto=format&fit=crop&w=1200&q=80"
+                   alt="Salon de beauté" style="width:100%; display:block;">
+            </div>
+          </div>
+          <div>
+            <div class="section-chip">
+              <span><span style="color:#be8e44;">●</span> Institut de beauté</span>
+            </div>
+            <h2 class="section-title">Un lieu dédié à votre bien-être</h2>
+            <p class="section-subtitle" style="margin-bottom:1.75rem;">
+              Profitez d'un moment de détente dans un cadre chaleureux et apaisant.
+              Soins du visage, massages, onglerie, épilations… notre équipe est à votre écoute
+              pour créer une parenthèse sur-mesure.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services principaux (ServiceCard) -->
+    <section class="section section-muted">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-chip" style="background:#fff;">
+            <span>Nos prestations</span>
+          </div>
+          <h2 class="section-title">Prenez soin de vous</h2>
+          <p class="section-subtitle">
+            Découvrez notre sélection de soins pour le visage, le corps, les mains
+            et bien plus encore.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <!-- Soins du visage -->
+          <a href="prestations.html" class="card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1664549760921-2198b054a592?auto=format&fit=crop&w=1000&q=80"
+                   alt="Soins du visage">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Soins du visage</h3>
+              <p class="card-text">
+                Prenez soin de votre peau avec nos soins adaptés à vos besoins.
+              </p>
+              <div class="card-link">
+                Voir les prestations
+                <span>➜</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Soins du corps -->
+          <a href="prestations.html" class="card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1759214630580-7b2e97e2c29b?auto=format&fit=crop&w=1000&q=80"
+                   alt="Soins du corps">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Soins du corps</h3>
+              <p class="card-text">
+                Des rituels relaxants pour sublimer votre corps.
+              </p>
+              <div class="card-link">
+                Voir les prestations
+                <span>➜</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Onglerie -->
+          <a href="prestations.html" class="card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1659391542239-9648f307c0b1?auto=format&fit=crop&w=1000&q=80"
+                   alt="Onglerie">
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Onglerie</h3>
+              <p class="card-text">
+                Des mains parfaites avec notre expertise en manucure et pose de vernis.
+              </p>
+              <div class="card-link">
+                Voir les prestations
+                <span>➜</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Tu peux ajouter Épilations, Massages, Beauté du regard comme autres cartes si tu veux -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Bloc Offre du mois (teaser vers la page) -->
+    <section class="section section-light">
+      <div class="container">
+        <div class="grid-2">
+          <div>
+            <h2 class="section-title">Offre du mois : Rituel Détente Absolue</h2>
+            <p class="section-subtitle" style="margin-bottom:1.5rem;">
+              Offrez-vous 2h de pur bien-être avec notre rituel signature :
+              massage du corps, soin du visage personnalisé et moment de relaxation
+              dans notre espace détente.
+            </p>
+            <p style="margin-bottom:1.25rem; font-size:1.1rem;">
+              <strong>120€</strong>
+              <span style="text-decoration:line-through; opacity:.7; margin-left:.75rem;">160€</span>
+            </p>
+            <a href="offre-du-mois.html" class="button" style="background:#be8e44;">
+              En savoir plus
+            </a>
+          </div>
+          <div>
+            <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=1200&q=80"
+                 alt="Offre du mois" style="width:100%; border-radius:24px; box-shadow:0 12px 30px rgba(15,23,42,0.12);">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galerie (teaser) -->
+    <section class="section section-muted">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-chip">
+            <span>Notre univers</span>
+          </div>
+          <h2 class="section-title">Galerie</h2>
+          <p class="section-subtitle">
+            Plongez dans l'ambiance de notre institut.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <!-- 6 images comme dans HomePage -->
+          <div class="card-image" style="border-radius:18px; overflow:hidden;">
+            <img src="https://images.unsplash.com/photo-1731336479432-3eb5fdb3ab1c?auto=format&fit=crop&w=900&q=80"
+                 alt="Galerie 1" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <div class="card-image" style="border-radius:18px; overflow:hidden;">
+            <img src="https://images.unsplash.com/photo-1762745103248-093916cce084?auto=format&fit=crop&w=900&q=80"
+                 alt="Galerie 2" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <div class="card-image" style="border-radius:18px; overflow:hidden;">
+            <img src="https://images.unsplash.com/photo-1523634118614-82b2685ee3df?auto=format&fit=crop&w=900&q=80"
+                 alt="Galerie 3" style="width:100%; height:100%; object-fit:cover;">
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:2.5rem;">
+          <a href="galerie.html"
+             class="button"
+             style="background:#fff; border:2px solid var(--primary); color:var(--primary);">
+            Voir la galerie complète
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marques partenaires (teaser) -->
+    <section class="section section-light">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-chip" style="background:#f8f8f8;">
+            <span>Nos partenaires</span>
+          </div>
+          <h2 class="section-title">Marques partenaires</h2>
+          <p class="section-subtitle">
+            Nous travaillons avec les meilleures marques de cosmétiques.
+          </p>
+        </div>
+        <div class="grid-4">
+          <!-- Placeholders marque 1..8 -->
+          <div class="card" style="border-radius:18px; padding:2rem; box-shadow:0 8px 20px rgba(15,23,42,0.06);">
+            <div style="text-align:center; color:var(--primary);">
+              <div style="font-size:2rem; margin-bottom:.5rem;">✦</div>
+              <div style="font-size:.85rem;">Marque 1</div>
+            </div>
+          </div>
+          <div class="card" style="border-radius:18px; padding:2rem; box-shadow:0 8px 20px rgba(15,23,42,0.06);">
+            <div style="text-align:center; color:var(--primary);">
+              <div style="font-size:2rem; margin-bottom:.5rem;">✦</div>
+              <div style="font-size:.85rem;">Marque 2</div>
+            </div>
+          </div>
+          <div class="card" style="border-radius:18px; padding:2rem; box-shadow:0 8px 20px rgba(15,23,42,0.06);">
+            <div style="text-align:center; color:var(--primary);">
+              <div style="font-size:2rem; margin-bottom:.5rem;">✦</div>
+              <div style="font-size:.85rem;">Marque 3</div>
+            </div>
+          </div>
+          <div class="card" style="border-radius:18px; padding:2rem; box-shadow:0 8px 20px rgba(15,23,42,0.06);">
+            <div style="text-align:center; color:var(--primary);">
+              <div style="font-size:2rem; margin-bottom:.5rem;">✦</div>
+              <div style="font-size:.85rem;">Marque 4</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:2.5rem;">
+          <a href="marques.html"
+             class="button"
+             style="background:#fff; border:2px solid var(--primary); color:var(--primary);">
+            Découvrir nos marques
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA final -->
+    <section class="section section-cta">
+      <div class="container">
+        <h2 class="section-title">Prenez un moment pour vous</h2>
+        <p>
+          Offrez-vous une parenthèse de bien-être dans notre institut.
+          Réservez dès maintenant votre rendez-vous.
+        </p>
+        <div class="hero-actions" style="margin-top:2rem;">
+          <a href="#" class="button" style="background:#fff;color:var(--primary);">
+            Prendre RDV
+          </a>
+          <a href="#" class="button-outline">
+            Offrir un bon cadeau
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <!-- (colle ici le footer commun) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="logo">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2" />
+              <path
+                d="M20 8C20 8 12 12 12 20C12 28 20 32 20 32C20 32 28 28 28 20C28 12 20 8 20 8Z"
+                fill="currentColor" opacity="0.3" />
+              <circle cx="20" cy="20" r="4" fill="currentColor" />
+            </svg>
+            <div class="logo-text">Un temps pour Soi</div>
+          </div>
+          <p class="footer-text">
+            Votre institut de beauté dédié au bien-être et à la détente.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Coordonnées</h3>
+          <p class="footer-text">
+            123 Rue de la Beauté<br>
+            75001 Paris, France
+          </p>
+          <p class="footer-text">01 23 45 67 89<br>contact@untempspoursoi.fr</p>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Navigation</h3>
+          <a href="prestations.html" class="footer-link">Nos prestations</a>
+          <a href="offre-du-mois.html" class="footer-link">Offre du mois</a>
+          <a href="galerie.html" class="footer-link">Galerie</a>
+          <a href="marques.html" class="footer-link">Nos marques</a>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Horaires</h3>
+          <p class="footer-text">
+            Lundi - Vendredi : 9h - 19h<br>
+            Samedi : 9h - 17h<br>
+            Dimanche : fermé
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © 2025 Un temps pour Soi. Tous droits réservés.
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
