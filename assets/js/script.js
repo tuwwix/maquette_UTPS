@@ -105,8 +105,13 @@ function applyPartialPlaceholders(template, prefix) {
   });
 }
 
+function resolvePartialFilename(key) {
+  if (!key) return "";
+  return key.endsWith(".html") ? key : `${key}.html`;
+}
+
 async function loadExternalPartial(key, prefix) {
-  const filePath = `${prefix}${key}.html`;
+  const filePath = `${prefix}${resolvePartialFilename(key)}`;
   const response = await fetch(filePath, { cache: "no-cache" });
   if (!response.ok) throw new Error(`Impossible de charger ${filePath}`);
   const raw = await response.text();
@@ -161,6 +166,30 @@ function initNavbarInteractions() {
     "soins-visage.html": "prestations",
     "maquillage.html": "prestations",
     "bronzage-naturel.html": "prestations",
+    "berdoues.html": "marques",
+    "marques/berdoues.html": "marques",
+    "pages/marques/berdoues.html": "marques",
+    "bloomea.html": "marques",
+    "marques/bloomea.html": "marques",
+    "pages/marques/bloomea.html": "marques",
+    "eskalia.html": "marques",
+    "marques/eskalia.html": "marques",
+    "pages/marques/eskalia.html": "marques",
+    "esthederm.html": "marques",
+    "marques/esthederm.html": "marques",
+    "pages/marques/esthederm.html": "marques",
+    "artdeco.html": "marques",
+    "marques/artdeco.html": "marques",
+    "pages/marques/artdeco.html": "marques",
+    "indigo.html": "marques",
+    "marques/indigo.html": "marques",
+    "pages/marques/indigo.html": "marques",
+    "nakupenda.html": "marques",
+    "marques/nakupenda.html": "marques",
+    "pages/marques/nakupenda.html": "marques",
+    "lpg.html": "marques",
+    "marques/lpg.html": "marques",
+    "pages/marques/lpg.html": "marques",
   };
 
   const normalizePath = (value) => {
@@ -251,5 +280,3 @@ function filterPrestations(category) {
     }
   });
 }
-
-
