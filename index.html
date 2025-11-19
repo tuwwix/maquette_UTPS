@@ -1,28 +1,15 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Redirection...</title>
-  <script>
-    (function () {
-      const localHosts = new Set(["", "localhost", "127.0.0.1"]);
-      const isLocalEnv = window.location.protocol === "file:" || localHosts.has(window.location.hostname);
-      const target = "pages/home.html"; // always redirect to the local home page no matter the host
-
-      if (window.location.pathname !== target && window.location.pathname !== `/${target}`) {
-        window.location.replace(target);
-      }
-    })();
-  </script>
+  <title>Un temps pour Soi</title>
+  <meta http-equiv="refresh" content="0; url=pages/home.html">
 </head>
 <body>
   <p>
     Redirection en cours...
-    <noscript>
-      JavaScript est requis, vous pouvez ouvrir
-      <a href="pages/home.html">pages/home.html</a>.
-    </noscript>
+    <a href="pages/home.html">Acceder au site</a>
+    si la redirection ne se lance pas.
   </p>
 </body>
 </html>
-
