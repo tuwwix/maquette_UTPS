@@ -7,7 +7,7 @@
     (function () {
       const localHosts = new Set(["", "localhost", "127.0.0.1"]);
       const isLocalEnv = window.location.protocol === "file:" || localHosts.has(window.location.hostname);
-      const target = isLocalEnv ? "pages/home.html" : "/accueil";
+      const target = "pages/home.html"; // always redirect to the local home page no matter the host
 
       if (window.location.pathname !== target && window.location.pathname !== `/${target}`) {
         window.location.replace(target);
