@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteBase /
+
+# Pretty URLs -> actual files
+RewriteRule ^accueil/?$ pages/home.html [L]
+RewriteRule ^prestations/?$ pages/prestations.html [L]
+RewriteRule ^offre-du-mois/?$ pages/offre-du-mois.html [L]
+RewriteRule ^galerie/?$ pages/galerie.html [L]
+RewriteRule ^marques/?$ pages/marques.html [L]
+
+# Default fallback
+DirectoryIndex index.html pages/home.html
